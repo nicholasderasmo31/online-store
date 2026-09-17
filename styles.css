@@ -1,0 +1,182 @@
+nav {
+    padding: 10px;
+}
+
+h1 {
+ margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    color: red;
+    font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+img {
+
+    display: block;
+    width: auto;
+    margin: 20px auto;
+    padding: 10px;
+
+}
+
+img:active {
+    
+    opacity: 20%;
+}
+
+.product {
+    text-align: center;
+}
+
+.product label {
+    display: block;
+    cursor:pointer;
+}
+
+.price {
+    margin: 5px 0;
+    font-family: "Rock Salt", cursive;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+
+.product-grid img {
+
+width: 200px;
+height: auto;
+display: block;
+margin: 20px auto;
+
+}
+
+.center{
+
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+h2 {
+ margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.zoom-element {
+    display: inline-block;
+    transition: transform 0.1s ease;
+    cursor: pointer;
+    margin:20px;
+}
+
+.zoom-element:hover {
+    transform: scale(1.15);
+}
+
+.add-to-cart {
+    display: none;
+}
+
+.product label {
+    display: block;
+    cursor: pointer;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background: greenyellow;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.1s ease, opacity 0.1s ease;
+
+}
+
+#tee:target ~ .cart-icon .badge,
+#pants:target ~ .cart-icon .badge,
+#watch:target ~ .cart-icon .badge {
+opacity: 1;
+transform: scale(1);
+}
+
+
+
+
+
+ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+    color: black;
+}
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.target {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+footer{
+    padding: 50px;
+    color: blue;
+    text-align: center;
+color: rgb(0, 0, 0);
+font-family: "Rock Salt", cursive;
+background-color: #ededed
+}
